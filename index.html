@@ -1,0 +1,96 @@
+//write a html code to create a list of items for Hotel menu using tables first column image of the dish, second column will be name of the dish, third column will be price of the dish
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Menu</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: beige;
+            margin: 0;
+            padding: 20px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            border: 2px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+            
+        }
+
+        tr:nth-child(odd) {
+            background-color: ivory;
+            
+        }
+
+        img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .dish-name {
+            font-weight: bold;
+        }
+
+        .dish-price {
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Our Delicious Menu</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Dish</th>
+                <th>Name</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><img src="dish1.jpg" alt="Dish 1"></td>
+                <td><span class="dish-name">Pasta Margherita</span></td>
+                <td><span class="dish-price">$12.99</span></td>
+            </tr>
+            <tr>
+                <td><img src="dish2.png" alt="Dish 2"></td>
+                <td><span class="dish-name">Pasta Carbonara</span></td>
+                <td><span class="dish-price">$10.99</span></td>
+            </tr>
+            <tr>
+                <td><img src="./Screenshot 2024-12-03 100930.png" alt="Dish 3"></td>
+                <td><span class="dish-name">Grilled beef</span></td>
+                <td><span class="dish-price">$20.99</span></td>
+            </tr>
+            <tr>
+                <td><img src="dish5.png" alt="Dish 5"></td>
+                <td><span class="dish-name">Garlic naan</span></td>
+                <td><span class="dish-price">$13.99</span></td>
+            </tr>
+            <tr>
+                <td><img src="dish4.png" alt="Dish 4"></td>
+                <td><span class="dish-name">Butter chicken</span></td>
+                <td><span class="dish-price">$12.99</span></td>
+            </tr>
+            </tbody>
+    </table>
+</body>
+</html>
